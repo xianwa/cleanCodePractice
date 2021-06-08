@@ -16,8 +16,8 @@ public class Args {
   private int currentArgument;
   private char errorArgument = '\0';
 
-  enum ErrorCode {
-    OK, MISSING_STRING}
+  private enum ErrorCode {
+    OK, MISSING_STRING,MISSING_INTEGER,INVALID_INTEGER,UNEXPECTED_ARGUMENT}
 
   private ErrorCode errorCode = ErrorCode.OK;
 
